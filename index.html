@@ -539,20 +539,43 @@
             </li>
           </ul>
         </div>
+        <div class="subscribe-footer">
+          <p class="subscribe-footer-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
+          <form>
+  <label>
+    
+    <input type="email" name="email" placeholder="E-mail" class="subscribe-footer-mail" />
+  </label>
+<button type="submit" class="subscribe-footer-btn">Подписаться</button>
+</form>
+</div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button data-modal-close type="button" class="btn-model">
+        <button data-modal-close type="button" class="close-model">
           <svg class="modal-close" width="11" height="11">
             <use href="./images/symbol-defs (1).svg#icon-close"></use>
           </svg>
         </button>
         <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
         <form class="modal-form">
+          Имя
           <input type="text" class="modal-input" />
-          <input type="text" class="modal-input" />
-          <input type="text" class="modal-input" />
+          Телефон
+          <input type="tel" class="modal-input" />
+          Почта
+          <input type="mail" class="modal-input" />
+         
+          <label>
+     Комментарий
+    <textarea name="comment" class="modal-comment" placeholder="Введите текст"></textarea>
+  </label>
+  <label>
+    <input type="checkbox" name="checkbox" /><span class="modal-mailing">Соглашаюсь с рассылкой и принимаю</span>
+    <a href="" class="modal-text-checkbox">Условия договора</a>
+  <button type="submit" class="btn-model">Отправить</button>
+</form>
         </form>
       </div>
     </div>
