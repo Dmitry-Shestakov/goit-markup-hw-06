@@ -731,7 +731,7 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-
+  padding: 40px;
   width: 528px;
   min-height: 581px;
   border-radius: 4px;
@@ -750,4 +750,16 @@ header {
   background-color: #ffffff;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.modal-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1, 15;
+  text-align: center;
+  color: #212121;
+}
+
+.modal-form {
+  
 }
