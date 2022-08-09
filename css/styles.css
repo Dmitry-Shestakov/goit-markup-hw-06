@@ -758,8 +758,9 @@ header {
   line-height: 1, 15;
   text-align: center;
   color: #212121;
+  margin-bottom: 12px;
 }
 
-.modal-form {
-  
+.modal-input {
+  width: 100%;
 }
