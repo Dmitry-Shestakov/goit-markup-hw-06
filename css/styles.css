@@ -181,10 +181,6 @@ header {
   margin-right: 10px;
 }
 
-/* .contacts-icon:hover {
-  color: #ffffff;
-} */
-
 /* Hero */
 
 .hero {
@@ -344,14 +340,14 @@ header {
   position: absolute;
   display: flex;
   justify-content: center;
+  align-items: center;
   bottom: 0;
-  left: 0;
   width: 100%;
   height: 70px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  padding-top: 27px;
+
   color: #ffffff;
   background: rgba(47, 48, 58, 0.8);
 }
@@ -578,6 +574,10 @@ header {
   justify-content: baseline;
 }
 
+.subscribe-form {
+  justify-content: baseline;
+}
+
 .subscribe-footer-mail {
   width: 358px;
   height: 50px;
@@ -585,14 +585,15 @@ header {
   margin-right: 12px;
   font-size: 16px;
   line-height: 1.25;
-  color: rgba(255, 255, 255, 0.6);
+  color: #ffffff;
   background-color: rgba(47, 48, 58, 1);
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  outline: none;
 }
 
-.subscribe-footer-mail:hover {
+.subscribe-footer-mail:focus {
   border-color: var(--accent-color);
 }
 
@@ -605,18 +606,32 @@ header {
   margin-bottom: 20px;
 }
 
+.subscribe-form {
+  display: flex;
+}
+
 .subscribe-footer-btn {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+  width: 200px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   color: #ffffff;
   background-color: var(--accent-color);
   border-radius: 4px;
+  /* padding-left: 10px 28px; */
   border: 0;
   cursor: pointer;
+}
+
+.subscribe-icon {
+  /* position: absolute; */
+  fill: #ffffff;
+  margin-left: 10px;
 }
 
 /* Стили для Портфолио */
@@ -944,7 +959,7 @@ label.modal-mailing {
 .btn-model {
   position: relative;
   left: 50%;
-  transform: translate(-50%, 0);
+  transform: translate(-50%);
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
